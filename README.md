@@ -1,32 +1,50 @@
-# Data Analysis Repository
+Customer Churn Analysis (SQL)
+Business Context
+Customer retention is critical for subscription‑based and service‑driven businesses. Understanding why customers leave enables companies to reduce churn, improve customer experience, and protect recurring revenue.
+Problem Statement
+Analyze customer data to identify key drivers of churn and provide actionable recommendations to improve retention and reduce revenue loss.
+Dataset Overview
+- ~5,000 customer records
+- Customer demographics
+- Tenure and contract type
+- Service usage metrics
+- Support interaction history
+- Monthly charges and total charges
+- Churn indicator (Yes/No)
+Tools Used
+- SQL Server
+- T‑SQL (Joins, CTEs, Aggregations, Window Functions)
+- Python (Pandas) for cleaning and feature engineering
+- Excel for summary validation
+Methodology
+- Data Loading & Exploration
+- Inspected dataset shape and structure
+- Validated column types and missing values
+- Data Cleaning (Python)
+- Converted numeric fields (e.g., TotalCharges)
+- Filled missing values using median/mode strategies
+- Standardized categorical values
+- Removed duplicates and invalid entries
+- Feature Engineering
+- Created Tenure Groups
+- Created Monthly Charge Bands
+- Generated ChurnFlag (0/1) for SQL analysis
+- SQL Analysis
+- Segmented churn by tenure group
+- Segmented churn by monthly charges
+- Segmented churn by contract type
+- Calculated churn rates using aggregations and window functions
+- Insight Synthesis
+- Compared churn patterns across customer segments
+- Identified high‑risk groups
+Key Insights
+- Short‑tenure customers had the highest churn rates.
+- Month‑to‑month contracts showed significantly higher churn than long‑term contracts.
+- High support interaction + low service usage strongly correlated with churn.
+- Higher monthly charges were associated with increased churn likelihood.
+Business Recommendations
+- Introduce loyalty incentives for early‑tenure customers.
+- Promote discounted annual or two‑year contracts.
+- Improve support response times and reduce wait durations.
+- Launch proactive engagement campaigns for low‑usage customers.
 
-Welcome to the Data Analysis repository. This repository contains various data analysis projects aimed at deriving actionable insights from different datasets.
-
-## Projects
-
-### 1. Udemy Course Analysis Report
-This project analyzes Udemy course data to derive actionable insights for course creators, platform administrators, and learners.
-
-### 2. Movie Correlation Analysis Report
-This project explores correlations in movie data to uncover interesting patterns and insights.
-
-### 3. Web Scraping with Beautiful Soup
-This project scrapes job listings from a job site based on user-provided search terms and location.
-
-## Getting Started
-
-To get started with any project:
-
-1. Clone the repository:
-git clone https://github.com/preciousnobonga/Data-Analysis.git
-cd Data-Analysis
-2. Initialize and update submodules (if any):
-git submodule update --init --recursive
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-## License
-
-This repository is licensed under the MIT License.
